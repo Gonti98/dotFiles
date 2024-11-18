@@ -7,9 +7,6 @@ alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
 
-# Fastfetch with custom options
-alias ff='fastfetch'
-
 # Git Aliases
 alias gs='git status'
 alias ga='git add'
@@ -23,13 +20,12 @@ alias gb='git branch'
 alias gcl='git clone'
 
 # Docker Aliases
-alias dps='docker ps'                            # Show running containers
+alias dps='docker ps'                             # Show running containers
 alias dstop='docker stop $(docker ps -q)'         # Stop all running containers
 alias drm='docker rm $(docker ps -a -q)'          # Remove all stopped containers
 alias dim='docker images'                         # List Docker images
+alias drmi='docker rmi                            # Remove image
 alias drun='docker run -it'                       # Run new interactive container
-alias dlogs='docker logs -f'                      # Follow logs of a container
-alias dexec='docker exec -it'                     # Run commands inside running container
 
 # APT Aliases (for system package management)
 alias update='sudo apt update && sudo apt upgrade -y'   # Full system update
